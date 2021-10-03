@@ -1,0 +1,27 @@
+@import '../styles/app.scss'
+
+.bg-launch
+    display: flex
+    flex-direction: column
+    padding: $padding-box
+    margin: $margin-box
+    width: 100%
+
+.bg-launches 
+    display: flex
+    justify-content: space-between
+
+.bg-launchOverview
+    margin: $container-space
+.bg-launch-title
+    font-size: $fontSize-h4
+    font-weight: $fontWeight-bolder
+    color: $fontCol-text
+    padding: $padding-box
+.bg-launch-id
+    padding: $padding-box
+    color: $fontCol-title
+
+@media only screen and (max-width: $breakpoint-tablet)
+    .bg-launches
+        flex-wrap: wrap

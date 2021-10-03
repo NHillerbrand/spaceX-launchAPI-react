@@ -1,0 +1,50 @@
+@import '../styles/app.scss'
+
+.bg-util-search
+    display: flex
+    padding: $padding-box
+    max-width: 50%
+    margin: auto
+
+.bg-util-searchInput
+    box-sizing: border-box
+    display: inline-block
+    width: 100%
+    min-width: $input-minWidth
+    padding: $input-padding
+    color: $fontCol-label
+    font-size: $fontSize-b1
+    line-height: $fontSize-h1
+    background-color: $backgroundCol
+    background-image: none
+    border: $box-border
+    border-radius: $border-radius
+    transition: $transition-basic
+    margin: $margin-box
+    box-shadow: $box-shadow
+
+.bg-util-searchInput:focus
+    border: $box-border
+    box-shadow: $box-shadow-focus
+    outline: 0
+
+    
+
+.bg-util-searchBtn
+    margin: $margin-box
+    padding: $button-padding
+    box-shadow: $box-shadow
+    border: $box-border
+    border-radius: $border-radius
+    background-color: $accentCol
+    color: $fontCol-btn-accent
+
+@media only screen and (max-width: $breakpoint-phone)
+    .bg-util-search
+        max-width: 60%
+    .bg-util-searchInput, .bg-util-searchBtn
+        margin:  $margin-box 0 0 0
+@media only screen and (max-width: $breakpoint-tablet)
+        .bg-util-searchInput, .bg-util-searchBtn
+            margin:  $margin-box 0 0 0
+            max-width: 65%

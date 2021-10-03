@@ -1,0 +1,34 @@
+@import '~antd/dist/antd.css';
+@import './structure.sass';
+@import './theme.sass';
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-root {
+    margin: 8rem auto;
+    max-width: 1000px;
+}
+
+.bg-container {
+    border: $box-border;
+    box-sizing: border-box;
+    margin: $margin-box;
+    padding: $padding-box;
+    font-size: $fontSize-b2;
+    background: $backgroundCol;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+.bg-container-title {
+    font-size: $fontSize-h3;
+    margin: $margin-box * 1.25 $margin-box;
+    font-weight: $fontWeight-bolder;
+    color: $fontCol-text
+}
+

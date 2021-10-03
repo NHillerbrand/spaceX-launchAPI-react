@@ -1,0 +1,55 @@
+@import '../styles/app.scss'
+
+.bg-launchDetail
+    margin: $container-space
+    
+.bg-searchResult 
+    padding: $padding-box
+    display: flex
+    flex-direction: column
+    row-gap: $flexGap-row-L
+.bg-result-error
+    display: flex
+
+.bg-searchResult-tag
+    margin-top: auto
+    color: $fontCol-title
+
+.bg-searchResult-row
+    display: flex
+    justify-content: space-between
+    padding: 0 $padding-box
+
+.bg-searchResult-title
+    font-size: $fontSize-h1
+    font-weight: $fontWeight-bold
+    color: $fontCol-title
+
+.bg-launchDetail-errorMsg
+    margin: auto
+    color: $errorCol
+
+.bg-indicator 
+    width: $fab-size
+    height: $fab-size
+    border-radius: $fab-size
+    margin: auto 0
+
+.bg-indicator-notDefined
+    background-color: orange
+.bg-indicator-failure
+    background-color: red
+.bg-indicator-success
+    background-color: green
+
+
+/* ----- Overwrites ----- */
+
+.bg-Countdown
+    .ant-statistic-content-value
+        color: $fontCol-title
+
+@media only screen and (max-width: $breakpoint-phone)
+    .bg-searchResult-row
+        flex-wrap: wrap;
+        row-gap: $padding-box
